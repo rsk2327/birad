@@ -1,0 +1,7 @@
+setup.py
+birad/__init__.py
+birad.egg-info/PKG-INFO
+birad.egg-info/SOURCES.txt
+birad.egg-info/dependency_links.txt
+birad.egg-info/not-zip-safe
+birad.egg-info/top_level.txt
