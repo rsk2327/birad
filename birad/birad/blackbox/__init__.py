@@ -36,7 +36,7 @@ def getRatio(df):
 
 
 
-def analyzeFeature(df, truth, featureIndex, n, figsize = (10,10), createPlots = True,numCols=5):
+def analyzeFeature(df, truth, featureIndex, n, figsize = (10,10), createPlots = True,numCols=5, return_df = False):
 
     df = df.copy()
     
@@ -91,8 +91,10 @@ def analyzeFeature(df, truth, featureIndex, n, figsize = (10,10), createPlots = 
                 plt.imshow(img, 'gray')
 
             
-            
-    return getRatio(df)
+    if return_df ==True:
+        return df
+    else:
+        return getRatio(df)
     
             
     

@@ -13,6 +13,15 @@ def setTruthFile(df):
 
 
 def getRaceLabel(x,binary=False):
+    """
+    Given a filename, returns the race of the patient
+    African American : 0
+    White : 1
+    Rest : 2
+
+    For the function to work, the truth file needs to be set 
+    using the setTruthFile method
+    """
     ID = x.split("/")[-1].split("_")[0]
     label = truth[truth.DummyID == int(ID)]['Medview_Race'].values[0]
 
