@@ -1,8 +1,8 @@
 import pandas as pd 
-import numpy
+import numpy as np
 from imageio import imread
 import matplotlib.pyplot as plt
-
+import os
 
 global truth
 
